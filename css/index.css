@@ -1,3 +1,27 @@
 body{
-    background-color: gray;
+    background-image: linear-gradient(to left top, #0818b1, #49007f, #4c0055, #3f0033, #2b031b, #220313, #160109, #000000, #000000, #000000, #000000, #000000);
+}
+.imgwith{
+    width: 10%;
+}
+.bentobox{
+    border-radius: 25px;
+    background-color: grey;
+    width: max-content;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px black;
+}
+.buttomTransition{
+    transition: transform 1s;
+
+}
+.buttomTransition:hover{
+    transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+h1, h3{
+    text-align: center;
 }
