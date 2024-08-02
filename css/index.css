@@ -65,7 +65,8 @@ input:hover,textarea:hover{
 }
 
 .aboutme{
-    width: 98%;
+    width: 98.5%;
+    margin: 15px 20px;
     padding: 30px;
 }
 
@@ -95,4 +96,8 @@ li img{
     width: 50px;
     margin: 15px;
     height: 50px;
+}
+
+.proyect{
+    width: 58%;
 }
