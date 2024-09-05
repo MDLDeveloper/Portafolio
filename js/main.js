@@ -48,3 +48,31 @@ const sendToMsj = () => {
         viewAlert("Error", "Hubo un problema al enviar el mensaje. Inténtelo nuevamente.");
     })
 };
+
+const buttons = document.querySelectorAll('.buttonTransition');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        button.classList.add('animate__flip');
+    });
+
+    button.addEventListener('mouseout', () => {
+        button.classList.remove('animate__flip');
+    });
+});
+
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+    changeSlide(1);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    changeSlide(-1);
+});
+
+function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    document.querySelector('.carousel-content').style.transform = `translateX(-${currentSlide * 100}%)`;
+}

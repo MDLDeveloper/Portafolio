@@ -22,9 +22,6 @@ body{
     transition: transform 1s;
 
 }
-.buttonTransition:hover{
-    transform: matrix(0, -1, -1, 0, 0, 0);
-}
 
 h1, h3{
     text-align: center;
@@ -81,10 +78,11 @@ input:hover,textarea:hover{
     margin: 0 auto;
 
 }
-#sendbutton:hover .otherbt:hover{
+#sendbutton:hover, .otherbt:hover{
     background-color: #610072;
     cursor: pointer;
 }
+
 
 ul{
     display: grid;
@@ -114,3 +112,101 @@ li img{
     justify-content: center;
     align-items: center;
 }
+
+/* Carrucel */
+/* Contenedor del carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* Botones prev y next */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Contenedor de slides */
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cada slide */
+.slide {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Título, descripción y enlaces */
+.caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: 85%;
+}
+
+.caption h2 {
+    margin-bottom: 10px;
+    margin-inline: auto;
+    font-size: 24px;
+    color: black;
+    text-shadow: 1px 1px 1px #610072;
+    background-color: #8f8e8f62;
+    width: max-content;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.caption p {
+    margin-bottom: 10px;
+    color: black;
+    background-color: #8f8e8f62;
+    padding: 5px;
+    margin-inline: auto;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #610072;
+
+}
+
+.caption a {
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgb(158, 149, 149);
+    margin: 0 auto;
+}
+
+.caption a:hover {
+    background-color: #610072;
+    cursor: pointer;}

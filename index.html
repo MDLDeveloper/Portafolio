@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es-ES">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mario Daniel Ledesma - Portafolio</title>
@@ -18,13 +19,13 @@
             </article>
             <article class="bentobox">
                 <h1>Mario Daniel Ledesma</h1>
-                <h2>Desarrollador FullStack WEB</h2>
+                <h2>Desarrollador WEB FullStack</h2>
             </article>
             <article class="row row-cols-auto w-25">
-                <a href="https://www.linkedin.com/in/mariodanielledesma/" class="bentobox buttonTransition" target="_blank"><img class="buttonTransition rounded-4 bg-light-subtle" src="assets/icons/linkedin.svg" alt="Botón de LinkedIn"></a>
-                <a href="https://github.com/MDLDeveloper" target="_blank" class="bentobox buttonTransition"><img class="buttonTransition" src="assets/icons/github.svg" alt="Botón de GitHub"></a>
-                <a href="mailto:mariodanielledesma91@gmail.com" target="_blank" class="bentobox buttonTransition"><img class="buttonTransition" src="assets/icons/envelope-at.svg" alt="Botón de Email"></a>
-                <a href="https://wa.me/+5491121853014" target="_blank" class="bentobox buttonTransition"><img class="buttonTransition" src="assets/icons/whatsapp.svg" alt="Botón de WhatsApp"></a>
+                <a href="https://www.linkedin.com/in/mariodanielledesma/" class="bentobox animate__animated  buttonTransition " target="_blank"><img class="rounded-4 bg-light-subtle" src="assets/icons/linkedin.svg" alt="Botón de LinkedIn"></a>
+                <a href="https://github.com/MDLDeveloper" target="_blank" class="bentobox animate__animated  buttonTransition"><img src="assets/icons/github.svg" alt="Botón de GitHub"></a>
+                <a href="mailto:mariodanielledesma91@gmail.com" target="_blank" class="bentobox animate__animated  buttonTransition"><img src="assets/icons/envelope-at.svg" alt="Botón de Email"></a>
+                <a href="https://wa.me/+5491121853014" target="_blank" class="bentobox animate__animated  buttonTransition"><img src="assets/icons/whatsapp.svg" alt="Botón de WhatsApp"></a>
             </article>
         </section>
     </header>
@@ -32,16 +33,45 @@
         <section class="d-flex justify-content-between">
             <article class="bentobox proyect">
                 <h2>Proyectos</h2>
-                <div id="galeria"></div>
+                <div class="carousel">
+                    <button class="prev">⟨</button>
+                
+                    <div class="carousel-content">
+                        <div class="slide" id="slide1">
+                            <img src="assets/imgs/titulosmda.png" alt="Imagen 1">
+                            <div class="caption">
+                                <h2>Titulos para Service Manager</h2>
+                                <p>Esta aplicación fue desarrollada para solucionar la necesidad de unificar los títulos al generar tickets en Service Manager.</p>
+                                <a class="btn" href="https://github.com/repo1" target="_blank">Ver Repositorio</a>
+                                <a class="btn" href="https://pagina1.com" target="_blank">Ver Página</a>
+                            </div>
+                        </div>
+                
+                        <div class="slide" id="slide2">
+                            <img src="assets/imgs/rifas.png" alt="Imagen 2">
+                            <div class="caption">
+                                <h2>Venta de Rifas</h2>
+                                <p>OnePage desarrollado para realizar un sorteo con el fin de recaudar fondos para que Martin y Tati puedan participar en un torneo de taekwondo</p>
+                                <a class="btn" href="https://github.com/repo2" target="_blank">Ver Repositorio</a>
+                                <a class="btn" href="https://pagina2.com" target="_blank">Ver Página</a>
+                            </div>
+                        </div>
+                
+                        <!-- Agrega más slides si es necesario -->
+                    </div>
+                
+                    <button class="next">⟩</button>
+                </div>
+                
             </article>
             <article class="bentobox">
                 <h2>Tecnologías</h2>
                 <ul>
                     <li>
-                        <img src="assets/icons/css-logo.png" alt="Logo de CSS">
+                        <img src="assets/icons/icons8-css.svg" alt="Logo de CSS">
                     </li>
                     <li>
-                        <img src="assets/icons/html-logo.png" alt="Logo de HTML">
+                        <img src="assets/icons/icons8-html.svg" alt="Logo de HTML">
                     </li>
                     <li>
                         <img class="rounded-1" src="assets/icons/JavaScript-logo.png" alt="Logo de JavaScript">
@@ -50,19 +80,19 @@
                         <img src="assets/icons/Typescript_logo_2020.svg.png" alt="Logo de TypeScript">
                     </li>
                     <li>
-                        <img src="assets/icons/mysql-logo.png" alt="Logo de MySQL">
+                        <img src="assets/icons/icons8-mysql.svg" alt="Logo de MySQL">
                     </li>
                     <li>
-                        <img src="assets/icons/PHP-logo.png" alt="Logo de PHP">
+                        <img src="assets/icons/php-logo-svgrepo-com.svg" alt="Logo de PHP">
                     </li>
                     <li>
-                        <img src="assets/icons/python-logo.jpg" alt="Logo de Python">
+                        <img src="assets/icons/icons8-python-96.svg" alt="Logo de Python">
                     </li>
                     <li>
                         <img src="assets/icons/angular-logo.png" alt="Logo de Angular">
                     </li>
                     <li>
-                        <img src="assets/icons/bootstrap-logo.png" alt="Logo de Bootstrap">
+                        <img src="assets/icons/icons8-bootstrap.svg" alt="Logo de Bootstrap">
                     </li>
                     <li>
                         <img src="assets/icons/wordpress-logo.png" alt="Logo de WordPress">
@@ -108,11 +138,14 @@
                     <p>Diplomatura en Desarrollo Web FullStack<br>
                         <em> Junio 2021 - Enero 2022</em></p>
                 </div>
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <a class="otherbt btn" href="assets/docs/Mario Daniel Ledesma CV.pdf" download="Mario Daniel Ledesma CV.pdf">Descargar CV</a>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        <p style="color: white;">&copy; 2024 Mario Daniel Ledesma. Todos los derechos reservados.</p>
+        <p style="color: white;">&copy; 2024 Mario Daniel Ledesma</p>
     </footer>
     <script type="module" src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
