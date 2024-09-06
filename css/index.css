@@ -182,7 +182,7 @@ li img{
     font-size: 24px;
     color: black;
     text-shadow: 1px 1px 1px #610072;
-    background-color: #8f8e8f62;
+    background-color: rgba(255, 255, 255, 0.678);;
     width: max-content;
     border-radius: 10px;
     padding: 5px;
@@ -191,7 +191,7 @@ li img{
 .caption p {
     margin-bottom: 10px;
     color: black;
-    background-color: #8f8e8f62;
+    background-color: rgba(255, 255, 255, 0.678);
     padding: 5px;
     margin-inline: auto;
     border-radius: 10px;

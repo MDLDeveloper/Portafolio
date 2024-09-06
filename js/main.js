@@ -39,13 +39,14 @@ const sendToMsj = () => {
         if(result.success === true){
             viewAlert("Mensaje enviado", "Se envió el mensaje correctamente, en breves me comunicaré con usted.");
         }else{
-            viewAlert("Error", "Hubo un problema al enviar el mensaje. Inténtelo nuevamente.");
+            viewAlert("Error002", "Hubo un problema al enviar el mensaje. Inténtelo nuevamente.");
+            console.error(result.error);
         }
     })
     .catch(error => {
         console.error(error);
         quitSpinner()
-        viewAlert("Error", "Hubo un problema al enviar el mensaje. Inténtelo nuevamente.");
+        viewAlert("Error003", "Hubo un problema al enviar el mensaje. Inténtelo nuevamente.");
     })
 };
 
