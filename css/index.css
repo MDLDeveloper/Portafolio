@@ -59,9 +59,9 @@ input:hover,textarea:hover{
 }
 
 .aboutme{
-    width: 95.3%;
-    padding: 30px;
-    margin: 20px auto;
+    width: 100%;
+    padding: 20px;
+    margin-block: 15px;
 }
 
 #sendbutton, .otherbt{
@@ -82,21 +82,22 @@ input:hover,textarea:hover{
 
 
 ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
+    width: 100%;
+    padding: 0px;
+    align-items: center;
 }
+
 li img{
     width: 50px;
     margin: 15px;
     height: 50px;
 }
 
-.proyect{
-    width: 58%;
-}
+
 
 .mdl-modal{
     position: fixed;
@@ -121,6 +122,11 @@ li img{
     border-radius: 25px;
 }
 
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 /* Botones prev y next */
 .prev, .next {
     position: absolute;
@@ -136,10 +142,18 @@ li img{
 
 .prev {
     left: 0;
+    border-radius: 0px 7px 7px 0px;
+
 }
 
 .next {
     right: 0;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.prev:hover, .next:hover{
+    background-color: #61007275;
+
 }
 
 /* Contenedor de slides */
@@ -252,6 +266,22 @@ footer{
     align-items: center;
 }
 
+.tecno{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecno h2{
+    width: 100%;
+}
+
+.proyect{
+    width: 65%;
+}
+
 @media (max-width: 980px){
     body{
         width: 100%;
@@ -277,6 +307,44 @@ footer{
 
 }
 
+@media (max-width: 856px){
+    .typ{
+        flex-direction: column;
+    }
+
+    .typ article{
+        width: 95%;
+        margin: 15px auto;
+    }
+    .aboutme{
+        width: 95%;
+    }
+
+    .downcv{
+        margin-top: 0px !important;     
+        height: 100%;
+        position: relative;
+        display: block;
+    }
+
+    .downcv a{
+        position: absolute;
+        display: block;
+        transform: translateY(-200%);
+        right: 5%;
+    }
+
+    .cys{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .cys article{
+        width: 95%;
+        margin: 15px auto;
+    }
+}
+
 @media (max-width: 723px){
     .sec_top{
         flex-direction:column-reverse
@@ -293,6 +361,20 @@ footer{
         width: 95%;
         margin: 20 auto;
     }
+
+    .downcv{
+        margin-top: auto;     
+        height: auto;
+        position: auto;
+        display: flex;
+    }
+
+    .downcv a{
+        position: relative;
+        display: block;
+        transform:none;
+        right:auto;
+    }
 }
 
 @media (max-width: 478px){
@@ -306,6 +388,31 @@ footer{
     .sec_top{
         width: 100%;
     }
+
+    .proyect{
+        padding: 10px;
+    }
+    .carousel {
+        border-radius: 10px;
+    }
+
+    .caption h2 {
+        font-size: 1.3rem;
+    }
+    
+    .caption p {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .caption a {
+   
+        padding: 4px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (max-width: 420px){
@@ -315,5 +422,12 @@ footer{
 
     .titlehead{
         width: 90%;
+    }
+
+    .caption h2{
+        width:fit-content;
+    }
+    .caption p {
+        display: none;
     }
 }
