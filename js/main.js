@@ -77,3 +77,5 @@ function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     document.querySelector('.carousel-content').style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+const socialbts = document.querySelectorAll('.socialbtn a');

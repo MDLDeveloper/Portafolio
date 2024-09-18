@@ -20,7 +20,14 @@ body{
     transition: transform 0.5s ease-in-out;
     transform-style: preserve-3d;
     display: block;
+}
 
+.buttonTransition:hover{
+    z-index: 1000;
+}
+
+.socialbtn a.animating {
+    pointer-events:visible;
 }
 
 h1, h3{
